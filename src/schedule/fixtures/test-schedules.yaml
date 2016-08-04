@@ -1,0 +1,24 @@
+- model: schedule.ScheduledPublication
+  pk: 1
+  fields:
+    article_identifier: "00123"
+    scheduled: "2016-04-28T12:00:00+00:00"
+    published: False
+- model: schedule.ScheduledPublication
+  pk: 2
+  fields:
+    article_identifier: "00124"
+    scheduled: "2016-04-28T12:01:00+00:00"
+    published: False
+- model: schedule.ScheduledPublication
+  pk: 3
+  fields:
+    article_identifier: "00125"
+    scheduled: "2016-04-28T14:00:00+00:00"
+    published: False
+- model: schedule.ScheduledPublication
+  pk: 4
+  fields:
+    article_identifier: "00999"
+    scheduled: "2016-04-28T12:01:01+00:00"
+    published: True
