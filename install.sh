@@ -3,6 +3,7 @@ set -e # everything must succeed.
 if [ ! -d venv ]; then
     virtualenv --python=`which python2` venv
 fi
+
 source venv/bin/activate
 
 if [ ! -e src/core/settings.py ]; then
@@ -11,5 +12,7 @@ if [ ! -e src/core/settings.py ]; then
     ln -s dev_settings.py settings.py
     cd ../../
 fi
+
 pip install -r requirements.txt
-python src/manage.py migrate
+
+python src/manage.py migrate --no-input
