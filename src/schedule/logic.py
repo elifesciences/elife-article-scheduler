@@ -1,5 +1,5 @@
 from django.core.exceptions import ObjectDoesNotExist
-import models
+from schedule import models
 import logging
 
 logger = logging.getLogger(__name__)

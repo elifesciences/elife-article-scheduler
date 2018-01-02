@@ -4,7 +4,7 @@ from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from django.utils import timezone
 from datetime import datetime
-import logic
+from schedule import logic
 import logging
 from rest_framework import status
 

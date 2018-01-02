@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e # everything must succeed.
 if [ ! -d venv ]; then
-    virtualenv --python=`which python2` venv
+    virtualenv --python=`which python3.5` venv
 fi
 
 source venv/bin/activate

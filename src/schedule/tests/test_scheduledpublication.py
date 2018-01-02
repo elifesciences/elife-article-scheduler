@@ -1,4 +1,4 @@
-from base import BaseCase
+from .base import BaseCase
 from schedule.models import ScheduledPublication
 from django.utils import timezone
 
