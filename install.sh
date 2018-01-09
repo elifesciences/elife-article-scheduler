@@ -1,7 +1,14 @@
 #!/bin/bash
 set -e # everything must succeed.
-if [ ! -d venv ]; then
-    virtualenv --python=`which python2` venv
+
+python=/usr/bin/python3.5
+py=${python##*/} # ll: python3.5
+
+# check for exact version of python3
+if [ ! -e "venv/bin/$py" ]; then
+    echo "could not find venv/bin/$py, recreating venv"
+    rm -rf venv
+    $python -m venv venv
 fi
 
 source venv/bin/activate

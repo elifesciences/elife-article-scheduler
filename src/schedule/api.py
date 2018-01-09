@@ -1,5 +1,5 @@
 from django.conf.urls import url
-import views
+from schedule import views
 
 urlpatterns_v1 = [
     url(r'^v1/article_scheduled_status/$', views.article_schedule, name='article-schedule'),

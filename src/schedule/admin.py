@@ -1,4 +1,4 @@
 from django.contrib import admin
-import models
+from schedule.models import ScheduledPublication
 
-admin.site.register(models.ScheduledPublication)
+admin.site.register(ScheduledPublication)
