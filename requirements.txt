@@ -1,5 +1,5 @@
 coverage==4.5.1
-Django==1.11.19
+Django==1.11.20
 #django-rest-swagger==2.2.0
 #djangorestframework==3.8.2
 django-rest-swagger==0.3.10
