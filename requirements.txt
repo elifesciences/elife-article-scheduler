@@ -1,3 +1,4 @@
+astroid==2.0.4
 coverage==4.5.1
 Django==1.11.20
 #django-rest-swagger==2.2.0
