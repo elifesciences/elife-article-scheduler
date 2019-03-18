@@ -3,12 +3,16 @@ from rest_framework.decorators import parser_classes
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from django.utils import timezone
+from django.http import HttpResponse
 from datetime import datetime
 from schedule import logic
 import logging
 from rest_framework import status
 
 logger = logging.getLogger(__name__)
+
+def ping(request):
+    return HttpResponse('pong')
 
 @api_view(['POST'])
 @parser_classes((JSONParser,))

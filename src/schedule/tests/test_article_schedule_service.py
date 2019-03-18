@@ -5,17 +5,19 @@ from django.test import Client
 from django.core.urlresolvers import reverse
 import json
 
+class Ping(BaseCase):
+    def test_ping(self):
+        c = Client()
+        resp = c.get(reverse('ping'))
+        self.assertEqual('pong', resp.content.decode('utf-8'))
 
 class ArticleScheduleServiceCase(BaseCase):
 
     fixtures = ['test-schedules.yaml']
 
     def setUp(self):
-
         self.c = Client()
-
         self.article_one = ScheduledPublication.objects.get(pk="1")
-
         one_hour = timezone.timedelta(hours=1)
         self.window_start = int((self.article_one.scheduled - one_hour).strftime("%s"))
         self.window_end = int((self.article_one.scheduled + one_hour).strftime("%s"))
