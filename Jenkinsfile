@@ -7,8 +7,12 @@ elifePipeline {
  
     stage 'Project tests', {
         lock('elife-dashboard--ci') {
-            builderDeployRevision 'elife-dashboard--ci', commit
-            builderProjectTests 'elife-dashboard--ci', '/srv/elife-article-scheduler'
+            // this would update the elife-dashboard project
+            //builderDeployRevision 'elife-dashboard--ci', commit
+            //builderProjectTests 'elife-dashboard--ci', '/srv/elife-article-scheduler'
+
+            builderCmd "elife-dashboard--ci", "sudo salt-call state.highstate --retcode-passthrough"
+            builderCmd "elife-dashboard--ci", "git reset --hard && git checkout ${commit} && ./project-tests.sh", "/srv/elife-article-scheduler", true, "serial"
         }
     }
 
