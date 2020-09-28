@@ -11,6 +11,7 @@ elifePipeline {
             //builderDeployRevision 'elife-dashboard--ci', commit
             //builderProjectTests 'elife-dashboard--ci', '/srv/elife-article-scheduler'
 
+            builderStart "elife-dashboard--ci"
             builderCmd "elife-dashboard--ci", "sudo salt-call state.highstate --retcode-passthrough"
             builderCmd "elife-dashboard--ci", "git reset --hard && git checkout ${commit} && ./project-tests.sh", "/srv/elife-article-scheduler", true, "serial"
         }
