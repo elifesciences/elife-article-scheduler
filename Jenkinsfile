@@ -13,7 +13,7 @@ elifePipeline {
 
             builderStart "elife-dashboard--ci"
             builderCmd "elife-dashboard--ci", "sudo salt-call state.highstate --retcode-passthrough"
-            builderCmd "elife-dashboard--ci", "git reset --hard && git checkout ${commit} && ./project-tests.sh", "/srv/elife-article-scheduler", true, "serial"
+            builderCmd "elife-dashboard--ci", "git reset --hard && git fetch && git checkout ${commit} && ./project_tests.sh", "/srv/elife-article-scheduler", true, "serial"
         }
     }
 
