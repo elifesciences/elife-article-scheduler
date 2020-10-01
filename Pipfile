@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "3.6"
+
+[packages]
+astroid = "~=2.0"
+djangorestframework = "~=3.9"
+psycopg2-binary = "~=2.8"
+requests = "~=2.20"
+Django = "==2.2.*"
+uWSGI = "~=2.0"
+# lsh@2020-07: pinned, isort==5.0.3 has changed it's api
+isort = "~=4.3"
+
+[dev-packages]
+coverage = "~=4.5"
+pylint = "~=2.1"
+pylint-django = "~=2.0"
+# there is a yaml test fixture that Django will try to load.
+# Django doesn't depend on yaml however.
+# src/schedule/fixtures/test-schedules.yaml
+PyYAML = "~=5.3"

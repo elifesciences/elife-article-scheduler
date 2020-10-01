@@ -2,7 +2,7 @@ from .base import BaseCase
 from schedule.models import ScheduledPublication
 from django.utils import timezone
 from django.test import Client
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 import json
 
 class Ping(BaseCase):
