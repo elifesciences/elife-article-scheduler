@@ -17,7 +17,6 @@ def ping(request):
 @api_view(['POST'])
 @parser_classes((JSONParser,))
 def article_schedule(rest_request, format=None):
-
     if rest_request is not None and rest_request.data is not None:
         articles = rest_request.data.get("articles")
         if articles is not None:
