@@ -7,17 +7,20 @@ verify_ssl = true
 python_version = "3.6"
 
 [packages]
-astroid = "==2.0.4"
-django-rest-swagger = "==0.3.10"
-djangorestframework = "==3.9.4"
-psycopg2-binary = "==2.8.3"
-requests = "==2.20.0"
-Django = "==1.11.29"
+astroid = "~=2.0"
+djangorestframework = "~=3.9"
+psycopg2-binary = "~=2.8"
+requests = "~=2.20"
+Django = "==2.2.*"
 uWSGI = "~=2.0"
 # lsh@2020-07: pinned, isort==5.0.3 has changed it's api
 isort = "~=4.3"
 
 [dev-packages]
-coverage = "==4.5.1"
-pylint = "==2.1.1"
-pylint-django = "==2.0.2"
+coverage = "~=4.5"
+pylint = "~=2.1"
+pylint-django = "~=2.0"
+# there is a yaml test fixture that Django will try to load.
+# Django doesn't depend on yaml however.
+# src/schedule/fixtures/test-schedules.yaml
+PyYAML = "~=5.3"

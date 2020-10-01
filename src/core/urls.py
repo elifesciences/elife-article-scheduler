@@ -19,5 +19,4 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls,),
     url(r'^schedule/', include('schedule.api')),
-    url(r'^docs/', include('rest_framework_swagger.urls')),
 ]
