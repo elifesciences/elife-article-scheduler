@@ -1,24 +1,24 @@
-# file generated 2021-03-19 - see update-dependencies.sh
-astroid==2.5.1
+# file generated 2021-04-12 - see update-dependencies.sh
+astroid==2.5.3
 certifi==2020.12.5
 chardet==4.0.0
 coverage==4.5.4
-Django==2.2.19
-djangorestframework==3.12.2
+Django==2.2.20
+djangorestframework==3.12.4
 idna==2.10
 isort==4.3.21
-lazy-object-proxy==1.5.2
+lazy-object-proxy==1.6.0
 mccabe==0.6.1
 psycopg2-binary==2.8.6
-pylint==2.7.2
-pylint-django==2.4.2
+pylint==2.7.4
+pylint-django==2.4.3
 pylint-plugin-utils==0.6
 pytz==2021.1
 PyYAML==5.4.1
 requests==2.25.1
 sqlparse==0.4.1
 toml==0.10.2
-typed-ast==1.4.2
+typed-ast==1.4.3
 urllib3==1.26.4
 uWSGI==2.0.19.1
 wrapt==1.12.1
