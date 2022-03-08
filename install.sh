@@ -13,6 +13,7 @@ if [ ! -e src/core/settings.py ]; then
     cd ../../
 fi
 
+pip install pip wheel --upgrade
 pip install -r requirements.txt
 
 python src/manage.py migrate --no-input
