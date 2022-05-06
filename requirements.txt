@@ -1,10 +1,11 @@
-# file generated 2022-04-25 - see update-dependencies.sh
-astroid==2.11.3
+# file generated 2022-05-06 - see update-dependencies.sh
+asgiref==3.4.1
+astroid==2.11.4
 certifi==2021.10.8
 charset-normalizer==2.0.12
 coverage==4.5.4
 dill==0.3.4
-Django==2.2.28
+Django==3.2.13
 djangorestframework==3.13.1
 idna==3.3
 isort==4.3.21
@@ -12,7 +13,7 @@ lazy-object-proxy==1.7.1
 mccabe==0.7.0
 platformdirs==2.4.0
 psycopg2-binary==2.8.6
-pylint==2.13.7
+pylint==2.13.8
 pylint-django==2.5.3
 pylint-plugin-utils==0.7
 pytz==2022.1
@@ -24,4 +25,4 @@ typed-ast==1.5.3
 typing-extensions==4.1.1
 urllib3==1.26.9
 uWSGI==2.0.20
-wrapt==1.14.0
+wrapt==1.14.1
