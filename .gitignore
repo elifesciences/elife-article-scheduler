@@ -1,16 +1,9 @@
-.DS_Store
 *.pyc
 *~
 *.orig
 *.log
-src/core/settings.py
-settings.py
-.boto
 tmp
 venv
-.idea
-flask_session
-.DS_Store
-elifearticleschedule/.DS_Store
 db.sqlite3
 .coverage
+app.cfg
