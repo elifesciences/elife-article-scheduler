@@ -14,7 +14,9 @@ SRC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # "/path/t
 PROJECT_DIR = os.path.dirname(SRC_DIR) # "/path/to/app/"
 
 CFG_NAME = 'app.cfg'
-DYNCONFIG = configparser.ConfigParser(**{
+# lsh@2022-05-25: disabled, it interferes with reading the secret key.
+#DYNCONFIG = configparser.ConfigParser(**{
+DYNCONFIG = configparser.RawConfigParser(**{
     'allow_no_value': True,
     'defaults': {'dir': SRC_DIR, 'project': PROJECT_NAME}})
 DYNCONFIG.read(join(PROJECT_DIR, CFG_NAME)) # "/path/to/app/app.cfg"
