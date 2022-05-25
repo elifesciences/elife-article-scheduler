@@ -128,6 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 
 STATIC_URL = '/static/'
+STATIC_ROOT = join(PROJECT_DIR, 'static')
 
 LOGGING = {
     'version': 1,
