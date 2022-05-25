@@ -5,16 +5,13 @@ echo "[-] install.sh"
 . mkvenv.sh
 
 source venv/bin/activate
-
-if [ ! -e src/core/settings.py ]; then
-    echo "no settings.py found! using the DEV settings (dev_settings.py) by default."
-    cd src/core/
-    ln -s dev_settings.py settings.py
-    cd ../../
-fi
-
 pip install pip wheel --upgrade
-pip install -r requirements.txt
+pip install -r requirements.txt --no-color
+
+if [ ! -e app.cfg ]; then
+    echo "* no app.cfg found! using the example settings (elife.cfg) by default."
+    ln -s elife.cfg app.cfg
+fi
 
 python src/manage.py migrate --no-input
 
