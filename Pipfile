@@ -7,7 +7,6 @@ verify_ssl = true
 python_version = "3.8"
 
 [packages]
-astroid = "~=2.0"
 djangorestframework = "~=3.9"
 # psycopg2 doesn't use semver.
 # psycopg2 2.9.x isn't compatible with django 2.2:
