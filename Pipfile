@@ -4,10 +4,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
 
 [packages]
-astroid = "~=2.0"
 djangorestframework = "~=3.9"
 # psycopg2 doesn't use semver.
 # psycopg2 2.9.x isn't compatible with django 2.2:
@@ -21,7 +20,9 @@ isort = "~=4.3"
 
 [dev-packages]
 coverage = "~=4.5"
-pylint = "~=2.1"
+# lsh@2022-10-19: pinned to 2.14 because of https://github.com/PyCQA/pylint-django/issues/370
+#pylint = "~=2.1"
+pylint = "==2.14.*"
 pylint-django = "~=2.0"
 # there is a yaml test fixture that Django will try to load.
 # Django doesn't depend on yaml however.

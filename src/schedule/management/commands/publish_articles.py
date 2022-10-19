@@ -31,7 +31,7 @@ class Command(BaseCommand):
             auth = requests.auth.HTTPBasicAuth(settings.PUBLISHING_SERVICE_USER,
                                                settings.PUBLISHING_SERVICE_PASSWORD)
             response = requests.post(service, json=message, auth=auth)
-            if response.status_code is 200:
+            if response.status_code == 200:
                 schedule.published = True
                 schedule.save()
             else:
