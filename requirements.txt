@@ -1,28 +1,28 @@
-# file generated 2023-08-25 - see update-dependencies.sh
+# file generated 2023-10-03 - see update-dependencies.sh
 asgiref==3.7.2
 astroid==2.11.7
 certifi==2023.7.22
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
 coverage==4.5.4
 dill==0.3.7
-Django==3.2.20
+Django==3.2.21
 djangorestframework==3.14.0
 idna==3.4
 isort==4.3.21
 lazy-object-proxy==1.9.0
 mccabe==0.7.0
-platformdirs==3.10.0
+platformdirs==3.11.0
 psycopg2-binary==2.8.6
 pylint==2.14.5
 pylint-django==2.5.3
 pylint-plugin-utils==0.8.2
-pytz==2023.3
+pytz==2023.3.post1
 PyYAML==5.4.1
 requests==2.31.0
 sqlparse==0.4.4
 tomli==2.0.1
 tomlkit==0.12.1
-typing_extensions==4.7.1
-urllib3==2.0.4
+typing_extensions==4.8.0
+urllib3==2.0.6
 uWSGI==2.0.22
 wrapt==1.15.0
