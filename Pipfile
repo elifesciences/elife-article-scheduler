@@ -20,10 +20,8 @@ isort = "~=4.3"
 
 [dev-packages]
 coverage = "~=4.5"
-# lsh@2022-10-19: pinned to 2.14 because of https://github.com/PyCQA/pylint-django/issues/370
-#pylint = "~=2.1"
-pylint = "==2.14.*"
-pylint-django = "~=2.0"
+pylint = "~=2.15"
+pylint-django = "~=2.5"
 # there is a yaml test fixture that Django will try to load.
 # Django doesn't depend on yaml however.
 # src/schedule/fixtures/test-schedules.yaml
