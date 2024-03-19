@@ -1,12 +1,13 @@
-# file generated 2024-02-09 - see update-dependencies.sh
+# file generated 2024-03-19 - see update-dependencies.sh
 asgiref==3.7.2
 astroid==2.15.8
+backports.zoneinfo==0.2.1
 certifi==2024.2.2
 charset-normalizer==3.3.2
 coverage==4.5.4
 dill==0.3.8
-Django==3.2.24
-djangorestframework==3.14.0
+Django==3.2.25
+djangorestframework==3.15.0
 idna==3.6
 isort==4.3.21
 lazy-object-proxy==1.10.0
@@ -21,8 +22,8 @@ PyYAML==5.4.1
 requests==2.31.0
 sqlparse==0.4.4
 tomli==2.0.1
-tomlkit==0.12.3
-typing_extensions==4.9.0
-urllib3==2.2.0
+tomlkit==0.12.4
+typing_extensions==4.10.0
+urllib3==2.2.1
 uWSGI==2.0.24
 wrapt==1.16.0
